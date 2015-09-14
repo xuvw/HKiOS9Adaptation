@@ -1,0 +1,31 @@
+1 从iOS9 Xcode7开始所有http网络请求都默认被替换为https请求，通过如下方式做兼容
+  参考：http://www.cnblogs.com/loganv/p/4647833.html
+  a 修改info.plist文件，添加自定义ATS
+###允许任意类型数据加载：
+    <key>NSAppTransportSecurity</key>
+    <dict>
+    <key>NSAllowsArbitraryLoads</key>
+    <true/>
+    </dict>
+
+###更加严谨的设置：
+    <key>NSAppTransportSecurity</key>
+    <dict>
+    <key>NSExceptionDomains</key>
+    <dict>
+    <!--指定自己的服务器域名-->
+    <key>yourserver.com</key>
+    <dict>
+    <!--Include to allow subdomains-->
+    <key>NSIncludesSubdomains</key>
+    <true/>
+    <!--Include to allow insecure HTTP requests-->
+    <key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+    <true/>
+    <!--Include to specify minimum TLS version-->
+    <key>NSTemporaryExceptionMinimumTLSVersion</key>
+    <string>TLSv1.1</string>
+    </dict>
+    </dict>
+    </dict>
+

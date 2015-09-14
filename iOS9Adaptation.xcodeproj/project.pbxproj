@@ -13,6 +13,7 @@
 		ADA622AE1BA6AFD0001E6402 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA622AC1BA6AFD0001E6402 /* Main.storyboard */; };
 		ADA622B01BA6AFD0001E6402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA622AF1BA6AFD0001E6402 /* Assets.xcassets */; };
 		ADA622B31BA6AFD0001E6402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA622B11BA6AFD0001E6402 /* LaunchScreen.storyboard */; };
+		ADF3C2EB1BA6B85B009C3C0F /* Memo in Resources */ = {isa = PBXBuildFile; fileRef = ADF3C2EA1BA6B85B009C3C0F /* Memo */; settings = {ASSET_TAGS = (); }; };
 		ECE2C557260E0A0FF11C52B0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3DAE77627B2C17160EBAA0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		ADA622AF1BA6AFD0001E6402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADA622B21BA6AFD0001E6402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADA622B41BA6AFD0001E6402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADF3C2EA1BA6B85B009C3C0F /* Memo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Memo; sourceTree = "<group>"; };
 		DE3DAE77627B2C17160EBAA0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -55,6 +57,7 @@
 		ADA622971BA6AFD0001E6402 = {
 			isa = PBXGroup;
 			children = (
+				ADF3C2EA1BA6B85B009C3C0F /* Memo */,
 				ADA622A21BA6AFD0001E6402 /* iOS9Adaptation */,
 				ADA622A11BA6AFD0001E6402 /* Products */,
 				FC70A652CF724F9A540814A9 /* Pods */,
@@ -164,6 +167,7 @@
 			files = (
 				ADA622B31BA6AFD0001E6402 /* LaunchScreen.storyboard in Resources */,
 				ADA622B01BA6AFD0001E6402 /* Assets.xcassets in Resources */,
+				ADF3C2EB1BA6B85B009C3C0F /* Memo in Resources */,
 				ADA622AE1BA6AFD0001E6402 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
