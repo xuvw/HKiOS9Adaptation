@@ -1,5 +1,7 @@
+参考：http://www.cnblogs.com/loganv/p/4647833.html
+     https://github.com/ChenYilong/iOS9AdaptationTips
+
 1 从iOS9 Xcode7开始所有http网络请求都默认被替换为https请求，通过如下方式做兼容
-  参考：http://www.cnblogs.com/loganv/p/4647833.html
   a 修改info.plist文件，添加自定义ATS
 ###允许任意类型数据加载：
     <key>NSAppTransportSecurity</key>
@@ -29,3 +31,15 @@
     </dict>
     </dict>
 
+2 url scheme白名单：
+  从iOS9开始：app不能直接通过openURL方式打开别的App，解决办法：
+  a 需将别的App的URL scheme加入到自己的白名单[上限50个]中，如下：
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+    <string>QQurlscheme</string>
+    <string>WeiXinurlscheme2</string>
+    <string>Taobaourlscheme3</string>
+    <string>Sinaurlscheme4</string>
+    </array>
+  ***这会带来的问题：一些大型App中不会有巨大的白名单，导致类似淘宝、微信、qq、回调失败！！！
+3
